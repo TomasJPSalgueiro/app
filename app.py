@@ -31,7 +31,7 @@ log = app.logger
 @app.route("/ping", methods=("GET",))
 def ping():
     log.debug("ping!")
-    return jsonify({"message": "pong!"}), 200
+    return jsonify({"ola": "mundo!"}), 200
 
 
 if __name__ == "__main__":
